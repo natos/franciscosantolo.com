@@ -93,7 +93,7 @@ main.wrap {
 
 .hero {
   background-attachment:fixed;
-  background-image: url('/assets/images/hero.jpg');
+  background-image: url('https://natos.github.io/franciscosantolo.com/assets/images/hero.jpg');
   background-position: center;
   background-size: cover;
   width: 100%;
