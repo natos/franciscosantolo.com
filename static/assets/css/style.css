@@ -1,0 +1,385 @@
+/* Based on Heather - A Hyperminimal Jekyll Theme */
+
+/* BASSCSS Reset - http://jxnblk.github.io/basscss */
+body, h1, h2, h3, h4, h5, h6, dl, ol, ul, p,
+button, input, select, textarea {
+  margin: 0;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block;
+}
+
+
+body {
+  color: #333;
+  font-size: 100%;
+  font-size: 22px;
+  line-height: 1.75;
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  padding-top: 60px;
+}
+body * {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.25;
+  font-weight: 600;
+  margin-top: 53px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+h2, h3, h4, h5, h6 {
+  margin-bottom: 24px;
+}
+
+small, .small { font-size: 16px; }
+
+iframe { margin-bottom: 32px; }
+footer { text-align: center; }
+
+@media screen and (min-width: 640px) {
+  h1, .h1 { font-size: 48px; }
+  h2, .h2 { font-size: 32px; }
+  p, .p   { font-size: 20px; }
+}
+
+a { color: #4C1E36; }
+a:hover { color: #4C1E36; }
+/* h1 a { color: #333;} */
+
+
+p {
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .01em;
+  word-spacing: .075em;
+  margin-bottom: 2em;
+}
+
+.secondary-header {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #666;
+}
+
+.wrap {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+main.wrap {
+  padding: 2.5em 2% 5em 2%;
+}
+
+@media screen and (max-width: 640px) {
+  .wrap {
+    padding: 2.5em 7% 5em 7%;
+  }
+}
+
+.hero {
+  background-attachment:fixed;
+  background-image: url('/assets/images/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  /* margin-top: 60px; */
+}
+
+/** header */
+.site-header {
+  color: #4C1E36;
+  margin: 2.5em auto;
+}
+.site-header a {
+  color: #4C1E36;
+  text-decoration: none;
+}
+.site-header-title {
+  margin-bottom: 0;
+}
+.site-header-description {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #666;
+}
+/** end header */
+
+.navigation {
+  font-size: 16px;
+  height: 60px;
+  position: fixed;
+  top: 0; right: 0; left: 0;
+  background-color: #4C1E36;
+  z-index: 1;
+}
+.navigation a {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #ffffff;
+}
+.navigation ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  list-style: none;
+  padding: 1em;
+}
+
+/** social */
+.social-nav {
+  display: flex;
+  position: fixed;
+  top: .5em;
+  right: 1em;
+  z-index: 1;
+}
+.social-nav-item {
+  font-size: 12px;
+  margin-right: 1em;
+  transition: all .2s ease-out;
+  color: #efefef;
+}
+.social-nav-item:hover {
+  color: #ffffff;
+}
+.social-nav-item-icon { font-size: 1.8em; margin-right: .25em; }
+.social-nav-item-label { display: none; }
+/** end social */
+
+
+/** article */
+.article { 
+  margin-bottom: 3rem; 
+}
+.article img { 
+  max-width: 100%; 
+}
+.article p {
+  /* margin-bottom: 2em; */
+}
+.article-header {
+  margin: 3em 0;
+}
+.article-title {
+  margin: 0;
+}
+.article-description {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #666;
+}
+.article-published {
+  margin-bottom: 3em;
+  border-bottom: 1px solid #666;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.articles {
+
+}
+.article-listitem {
+  margin-bottom: 1me;
+}
+.article-listitem__time {
+  color: #666666;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.article-listitem__title {
+  font-family: 'Roboto', sans-serif;
+}
+.article-listitem__description {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/** end article */
+
+
+
+
+.center { text-align: center; }
+.fl { float: left; }
+.fr { float: right; }
+
+.small time { color: #999; }
+.about { margin-bottom: 5em; }
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+/**
+*  Instagram
+*/
+.gallery {
+  font-size: 16px;
+  position: relative;
+  margin: 0;
+  padding: 1rem 0;
+  width: auto;
+  height: auto;
+  transition: all 2s ease-in-out;
+}
+.gallery a {
+  color: #eee;
+}
+.gallery header {
+  opacity: .8;
+  vertical-align: top;
+}
+.gallery header > a {
+  padding: 0 1rem;
+}
+.gallery header > a strong {
+  line-height: 3em;
+  vertical-align: top;
+}
+.instagramas figure, {
+  /* margin: 1rem;
+  padding: 1rem; */
+}
+.instagramas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /*padding: 1rem 0 0;*/
+}
+.instagrama {
+  position: relative;
+  display: block;
+  color: #4C1E36;
+  margin: 0;
+  overflow: hidden;
+}
+.instagramas .placeholder {
+  opacity: 0;
+  transform: scale3d(0, 0, 0);
+  transition: all .5s ease-in-out;
+  will-change: opacity, transform;
+}
+.instagramas[data-state="ready"] .placeholder {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+.instagrama-image {
+  margin: 0;
+  margin-left: .5em;
+}
+.instagrama-thumbnail {
+  width: 150px;
+  height: 150px;
+}
+.instagrama-low_resolution {
+  width: 320px;
+  height: 320px;
+}
+.instagrama-standard_resolution {
+  width: 640px;
+  height: 640px;
+}
+.instagrama-video .instagrama:after {
+  /* play-circle icon */
+  content: "\f144";
+  /* play-circle icon end */
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  /* icon end */
+  position: absolute;
+  z-index: 900;
+  left: 50%;
+  top: 50%;
+  transform: scale3d(1, 1, 1) translate3d(-50%, -50%, 0);
+  opacity: 0;
+  color: #efefef;
+  text-align: center;
+  font-size: 5em;
+  will-change: opacity transform;
+  transition: all 1s ease-in-out;
+}
+.instagrama:hover:after {
+  opacity: .5;
+  transform: scale3d(1.05, 1.05, 1.05) translate3d(-50%, -50%, 0);
+}
+
+.instagrama-thumbnail img {}
+.instagrama
+.instagrama img {
+  display: block;
+  transition: all .5s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.5);
+  will-change: opacity, transform;
+}
+
+.instagrama-likes {
+  margin-left: .5rem;
+  left: .5rem;
+  top: .5rem;
+}
+.instagrama-likes:before { content: "❤ "; color: red; }
+.instagrama-tags {
+  margin-right: .5rem;
+  right: .5rem;
+  bottom: .5rem;
+}
+.instagrama-tag { margin-left: .5rem; }
+.instagrama-tag:before { content: "#"; }
+.instagrama figcaption {
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+  transform: scale3d(.5, .5, .5);
+  transition: all .35s ease-in-out;
+  will-change: opacity, transform;
+}
+.instagrama:hover .instagrama-tag,
+.instagrama:hover .instagrama-tags,
+.instagrama:hover .instagrama-likes {
+  transform: scale3d(1, 1, 1);
+  opacity: .75;
+}
+.instagrama:hover .instagrama-tag:hover,
+.instagrama:hover .instagrama-likes:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+  opacity: 1;
+}
+.instagrama-logo {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+/**
+ * Taxnomies
+ */
+
+.taxonomy.tag:after {
+  content: ", ";
+}
+.taxonomy.tag:last-of-type:after {
+  content: "";
+}
