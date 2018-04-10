@@ -1,31 +1,36 @@
 [links]
+[links.medium]
+  name = "Medium"
+  identifier = "medium"
+  url = "https://medium.com/@Fransantolo"
+  icon = "fab fa-medium-m"
+[links.quora]
+  name = "Quora"
+  identifier = "quora"
+  url = "https://www.quora.com/profile/Francisco-Santolo"
+  icon = "fab fa-quora"
 [links.linkedin]
   name = "LinkedIn"
   identifier = "linkedin"
   url = "https://www.linkedin.com/in/franciscosantolo/"
-  icon = "fa fa-linkedin-square"
-  weight = 3
+  icon = "fab fa-linkedin"
 [links.twitter]
   name = "Twitter"
   identifier = "twitter"
   url = "http://www.twitter.com/fransantolo"
-  icon = "fa fa-twitter-square"
-  weight = 1
+  icon = "fab fa-twitter"
 [links.instagram]
   name = "Instagram"
   identifier = "instagram"
   url = "http://www.instagram.com/santolofrancisco"
-  icon = "fa fa-instagram"
-  weight = 6
-[links.facebook]
-  name = "Facebook"
-  identifier = "facebook"
-  url = "http://www.facebook.com/fransantolo"
-  icon = "fa fa-facebook-square"
-  weight = 2
+  icon = "fab fa-instagram"
 [links.youtube]
   name = "YouTube"
   identifier = "youtube"
   url = "https://www.youtube.com/channel/UC5PHLkClsoL3A9Dfc2a5WEA?view_as=subscriber"
-  icon = "fa fa-youtube-square"
-  weight = 4
+  icon = "fab fa-youtube"
+[links.facebook]
+  name = "Facebook"
+  identifier = "facebook"
+  url = "http://www.facebook.com/fransantolo"
+  icon = "fab fa-facebook-square"
